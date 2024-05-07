@@ -1,0 +1,11 @@
+{
+  "mqtt_host":"cran-gw.e-technik.tu-ilmenau.de",
+  "mqtt_port":18330,
+  "mqtt_username" : "idmt",
+  "mqtt_password" : "#xflg34",
+  "mqtt_topic" : "mioty/70-b3-d5-67-70-0e-ff-ff/70-b3-d5-67-70-ff-03-27/uplink",
+  "influxDBUrl": "http://141.24.194.106:20202",
+  "influxDBToken": "ttTyoaH3NAn7k9qhjthzfEuASzbTYhpWF1G-KgmdzOlQfoTojDkYOXRcyEjGJ_0QjYdc1X3VtANXip6L8IBxaA==",
+  "influxDBOrga": "SciCamp",
+  "influxDBBucket": "BirdData"
+}
