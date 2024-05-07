@@ -1,7 +1,4 @@
-{"Results":
-  [
-    {"BirdID":123,"Name":"Hans"},
-    {"BirdID":124,"Name":"Gans"},
-    {"BirdID":125,"Name":"Fans"}
-  ]
-}
+BirdId,Name
+123,Hans
+124,Gans
+125,Fans
