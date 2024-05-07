@@ -7,14 +7,22 @@ import (
 )
 
 func main() {
-	conf := readConfig("config.json")
+	if len(os.Args) < 3 {
+		fmt.Println("<My\\Path\\To\\Config> <My\\Path\\To\\JSON-Directory>")
+		os.Exit(1)
+	}
 
-	files, err := os.ReadDir("jsonFiles")
+	configPath := os.Args[1]
+	jsonPath := os.Args[2]
+
+	conf := readConfig(configPath)
+
+	files, err := os.ReadDir(jsonPath)
 	if err != nil {
 		panic(err)
 	}
 	for i, file := range files {
-		data, err := os.ReadFile(fmt.Sprintf("jsonFiles/%s", file.Name()))
+		data, err := os.ReadFile(fmt.Sprintf("%s/%s", jsonPath, file.Name()))
 		if err != nil {
 			panic(err)
 		}

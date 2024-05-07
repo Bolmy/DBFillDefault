@@ -35,7 +35,7 @@ func writeData(data observationData, configData *config) {
 		fmt.Println(data)
 		fmt.Println(err)
 	} else {
-		fmt.Printf("Data written successfully %d %s\n", c, dataPoint.Time())
+		//fmt.Printf("Data written successfully %d %s\n", c, dataPoint.Time())
 	}
 	c++
 }
